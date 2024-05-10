@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Typography */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333; /* Dark gray */
+            margin: 0; /* Tambahkan ini untuk menghapus margin default */
+            padding: 0; /* Tambahkan ini untuk menghapus padding default */
+            position: relative; /* Tambahkan ini untuk menggunakan posisi relatif pada body */
+        }
+
+        /* Layout */
+        header, main, section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Buttons */
+       .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50; /* Accessible green */
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+       .button:hover {
+            background-color: #3E8E41; /* Darker green */
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+       .button:active {
+            background-color: #2E865F; /* Even darker green */
+            transform: translateY(1px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Background gradient */
+        body {
+            background-image: linear-gradient(to bottom, #4CAF50, #F7F7F7);
+        }
+
+        /* Center the section element */
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+            height: calc(100vh - 100px);
+            position: relative; /* Tambahkan ini untuk menggunakan posisi relatif pada section */
+        }
+
+        /* Logo styles */
+        .logo {
+            width: 250px;
+            height: 30px;
+            position: absolute; /* Tambahkan ini untuk menggunakan posisi absolut */
+            top: 20px; /* Tentukan jarak dari atas */
+            left: 20px; /* Tentukan jarak dari kiri */
+        }
+
+        .custom-img {
+            width: 130px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+            height: auto;
+            margin-top: 20px; /* Berikan jarak antara teks dan gambar baru */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo-web.png" alt="Logo" class="logo">
+        <h1>Bilangan Kompleks</h1>
+        <img src="Logo-Universitas-Siliwangi.png" alt="Custom Image" class="custom-img"> <!-- Tambahkan gambar baru di sini -->
+    </header>
+    <main>
+        <section>
+            <h1>Selamat Datang</h1>
+            <p>Silakan pilih salah satu dari tombol di bawah ini:</p>
+            <button class="button" onclick="location.href='Materi.html'">Penjelasan Materi</button>
+            <button class="button" onclick="location.href='index.html'">Kalkulator</button>
+        </section>
+    </main>
+</body>
+</html>

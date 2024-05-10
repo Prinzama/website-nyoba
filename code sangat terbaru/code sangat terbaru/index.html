@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Bilangan Kompleks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator Bilangan Kompleks</h1>
+        <button class="button" onclick="location.href='Home.html'">
+            <div class="button-box">
+              <span class="button-elem">
+                <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="button-elem">
+                <svg viewBox="0 0 46 40">
+                  <path
+                    d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </button>
+        </header>
+    <main>
+        <section id="explanation">
+            <h2>Panduan Penggunaan Kalkulator</h2>
+            <p>... Lorem ipsum ...</p>
+        </section>
+        <section id="calculator">
+            <h2>Kalkulator Bilangan Kompleks</h2>
+            <form id="complexCalculator">
+                <input placeholder="Real 1" class="input" id="real1" name="real1" type="number" required>
+                <br>
+                <input placeholder="Imajiner 1" class="input" id="imaginary1" name="imaginary1" type="number" required>
+                <br>
+                <input placeholder="Real 2" class="input" id="real2" name="real2" type="number" required>
+                <br>
+                <input placeholder="Imajiner 1" class="input" id="imaginary2" name="imaginary2" type="number" required>
+                <br>
+                <select id="operation" name="operation">
+                    <option value="add">Penjumlahan</option>
+                    <option value="subtract">Pengurangan</option>
+                    <option value="multiply">Perkalian</option>
+                    <option value="divide">Pembagian</option>
+                </select>
+
+                <button role="button" id="calculateBtn" class="button-name">Hitung</button>
+              </form>
+            <div id="result"></div>
+            <button id="zoomInBtn"> + </button>
+            <button id="zoomOutBtn"> - </button>
+            <div id="argandContainer">
+                <canvas id="argandCanvas" width="800" height="800"></canvas>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
